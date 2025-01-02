@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Jewerslify | Detail Product</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="max-w-6xl flex justify-between m-auto py-4">
+      <div class="flex gap-2">
+        <a
+          href="https://id-id.facebook.com/"
+          class="hover:opacity-60 transition-all"
+        >
+          <img src="src/icon/Facebook.svg" alt="" />
+        </a>
+        <a
+          href="https://www.instagram.com/"
+          class="hover:opacity-60 transition-all"
+        >
+          <img src="src/icon/Instagram.svg" alt="" />
+        </a>
+        <a href="https://linkedin.com/" class="hover:opacity-60 transition-all">
+          <img src="src/icon/LinkedIn.svg" alt="" />
+        </a>
+        <a href="https://twitter.com/" class="hover:opacity-60 transition-all">
+          <img src="src/icon/Twitter.svg" alt="" />
+        </a>
+      </div>
+      <div class="flex gap-6">
+        <a href="tel:+97257102">+97257102</a>
+        <div class="dropdown">
+          <button
+            onclick="myFunction()"
+            class="dropbtn flex gap-1 hover:text-neutral-600 transition-all items-center"
+          >
+            English <img src="src/icon/chevron-down.svg" alt="" />
+          </button>
+          <div
+            id="myDropdown"
+            class="dropdown-content mt-2 hover:text-neutral-600 transition-all"
+          >
+            <a href="/">Indonesia</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="py-6 sticky top-0 bg-white bg-opacity-70 z-9 backdrop-blur-lg border border-b-2"
+    >
+      <div class="max-w-6xl m-auto flex justify-between items-center">
+        <div class="flex gap-10 items-center">
+          <a href="/">
+            <img src="src/icon/Logo.svg" alt="" />
+          </a>
+
+          <form class="flex items-center max-w-sm mx-auto">
+            <label for="simple-search" class="sr-only">Search</label>
+            <div class="relative w-full">
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <g opacity="0.5">
+                    <path
+                      d="M15.5642 16.3391L10.8017 11.5758C8.68312 13.082 5.76376 12.7136 4.08579 10.7282C2.40782 8.7429 2.53103 5.80297 4.36923 3.96498C6.20695 2.12618 9.14717 2.00244 11.1329 3.68032C13.1186 5.3582 13.4872 8.27785 11.9809 10.3966L16.7434 15.16L15.5651 16.3383L15.5642 16.3391ZM7.90423 4.16663C6.32398 4.16628 4.96064 5.27554 4.63963 6.82284C4.31861 8.37014 5.12816 9.9302 6.57813 10.5585C8.0281 11.1868 9.71998 10.7107 10.6294 9.41835C11.5389 8.12604 11.416 6.37274 10.3351 5.21998L10.8392 5.71998L10.2709 5.15331L10.2609 5.14331C9.63739 4.51596 8.78873 4.16425 7.90423 4.16663Z"
+                      fill="#2E3A59"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <input
+                type="text"
+                id="simple-search"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
+                placeholder="Search..."
+                required
+              />
+            </div>
+            <button
+              type="submit"
+              class="p-2.5 ms-2 text-sm font-medium text-white bg-amber-700 rounded-lg border border-amber-700 hover:bg-amber-800 focus:ring-4 focus:outline-none focus:ring-amber-300 dark:bg-amber-600 dark:hover:bg-amber-700 dark:focus:ring-amber-800"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+              <span class="sr-only">Search</span>
+            </button>
+          </form>
+          <ul class="flex gap-6">
+            <li class="hover:text-neutral-500 font-medium transition-all">
+              <a href="/">Kalung</a>
+            </li>
+            <li class="hover:text-neutral-500 font-medium transition-all">
+              <a href="/">Cincin</a>
+            </li>
+            <li class="hover:text-neutral-500 font-medium transition-all">
+              <a href="/">Anting</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex gap-6">
+          <a href="wishlist.html" class="hover:opacity-60 transition-all"
+            ><img src="src/icon/heart_outline.svg" alt=""
+          /></a>
+          <a href="/sign_in.html" class="hover:opacity-60 transition-all"
+            ><img src="src/icon/user.svg" alt=""
+          /></a>
+          <button id="cartButton" class="hover:opacity-60 transition-all">
+            <img src="src/icon/shopping.svg" alt="Shopping Cart" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIDEBAR CART -->
+
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black bg-opacity-50 z-10 hidden"
+    ></div>
+    <div
+      id="cartSidebar"
+      class="fixed top-0 z-10 right-0 h-full max-w-xl bg-white shadow-lg transform translate-x-full transition-transform duration-300"
+    >
+      <div class="p-6 flex h-full flex-col justify-between space-y-4">
+        <div class="flex flex-col gap-8">
+          <div class="flex justify-between items-center">
+            <h2 class="text-lg font-bold">Cart</h2>
+            <button id="closeCart" class="text-xl hover:opacity-60">
+              &times;
+            </button>
+          </div>
+          <div class="py-2 border-y border-neutral-200">
+            <span>You are eligible for free delivery.</span>
+          </div>
+          <!-- Isi Cart -->
+          <div class="flex flex-col gap-8">
+            <div class="flex gap-4 justify-between">
+              <img
+                src="src/images/image-1.png"
+                class="max-w-32 h-fit rounded-xl"
+                alt=""
+              />
+              <div class="flex flex-col gap-4">
+                <span>Triple Gold & Diamond Pinky Ring Stack </span>
+                <hr />
+                <span class="font-semibold text-lg">Rp 500.000</span>
+                <div class="flex items-center space-x-2 rounded-md">
+                  <!-- Tombol Minus -->
+                  <button
+                    class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200 text-gray-700"
+                  >
+                    -
+                  </button>
+
+                  <!-- Input Jumlah -->
+                  <input
+                    type="number"
+                    value="1"
+                    min="1"
+                    class="w-16 h-10 text-center rounded-md focus:ring-2 focus:ring-orange-500 focus:outline-none"
+                  />
+
+                  <!-- Tombol Plus -->
+                  <button
+                    class="w-8 h-8 flex items-center justify-center bg-amber-500 text-white rounded-full hover:bg-amber-600"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-4 justify-between">
+              <img
+                src="src/images/image-2.png"
+                class="max-w-32 h-fit rounded-xl"
+                alt=""
+              />
+              <div class="flex flex-col gap-4">
+                <span>Triple Gold & Diamond Pinky Ring Stack </span>
+                <hr />
+                <span class="font-semibold text-lg">Rp 300.000</span>
+                <div class="flex items-center space-x-2 rounded-md">
+                  <!-- Tombol Minus -->
+                  <button
+                    class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200 text-gray-700"
+                  >
+                    -
+                  </button>
+
+                  <!-- Input Jumlah -->
+                  <input
+                    type="number"
+                    value="1"
+                    min="1"
+                    class="w-16 h-10 text-center rounded-md focus:ring-2 focus:ring-orange-500 focus:outline-none"
+                  />
+
+                  <!-- Tombol Plus -->
+                  <button
+                    class="w-8 h-8 flex items-center justify-center bg-amber-500 text-white rounded-full hover:bg-amber-600"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4">
+          <a
+            class="py-3 px-6 flex bg-amber-600 w-full text-center justify-center rounded-md text-white hover:bg-amber-700 transition-all"
+            href="/detail_product.html"
+            >Checkout</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- SIDEBAR CART -->
+    <!-- navbar -->
+    <div class="mt-16 grid grid-cols-12 gap-4 max-w-4xl m-auto">
+      <div class="col-span-6">
+        <img src="src/images/image-9.jpg" alt="" />
+      </div>
+      <div
+        class="flex gap-8 flex-col border border-neutral-300 col-span-6 shadow-md rounded-md p-8"
+      >
+        <h3 class="text-3xl font-medium">
+          Need Any Help For Business & Consulting?
+        </h3>
+        <div class="flex flex-col gap-4">
+          <div class="space-y-2 flex flex-col">
+            <label class="text-sm" for="">Name</label>
+            <input
+              class="border text-sm border-neutral-300 py-2 px-4 rounded-md focus:outline-amber-700"
+              placeholder="Enter your name"
+              type="text"
+            />
+          </div>
+          <div class="space-y-2 flex flex-col">
+            <label class="text-sm" for="">Email</label>
+            <input
+              class="border text-sm border-neutral-300 py-2 px-4 rounded-md focus:outline-amber-700"
+              placeholder="Enter your email"
+              type="email"
+            />
+          </div>
+          <div class="space-y-2 flex flex-col">
+            <label class="text-sm" for="">Message</label>
+            <textarea
+              class="border text-sm border-neutral-300 py-2 px-4 rounded-md focus:outline-amber-700"
+              placeholder="Enter your email"
+              type="text"
+            >
+            </textarea>
+          </div>
+          <a
+            class="py-3 px-6 flex bg-amber-600 w-full text-center justify-center rounded-md text-white hover:bg-amber-700 transition-all"
+            href=""
+            >Send</a
+          >
+        </div>
+      </div>
+    </div>
+    <footer class="bg-amber-950 mt-32 py-24">
+      <div class="max-w-6xl m-auto flex justify-between">
+        <div class="flex flex-col gap-4 max-w-md">
+          <img class="w-40" src="src/images/Logo-white.svg" alt="" />
+          <p class="text-neutral-300">
+            Emas putih dan emas kuning sama-sama memiliki pesona tersendiri.
+            Seringkali kita menemukan perbedaan harga yang cukup signifikan
+            antara cincin emas...
+          </p>
+        </div>
+        <div class="flex gap-10">
+          <div class="flex flex-col gap-4">
+            <h5 class="text-white font-medium">Quick Links</h5>
+            <ul class="flex flex-col gap-3">
+              <li
+                class="hover:text-neutral-500 text-neutral-300 transition-all"
+              >
+                <a href="/">Team</a>
+              </li>
+              <li
+                class="hover:text-neutral-500 text-neutral-300 transition-all"
+              >
+                <a href="/">Career </a>
+              </li>
+              <li
+                class="hover:text-neutral-500 text-neutral-300 transition-all"
+              >
+                <a href="faq.html">FAQ </a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h5 class="text-white font-medium">Contact</h5>
+            <ul class="flex flex-col gap-3">
+              <li class="text-neutral-300 tr">
+                Broklyn Street , New York, USA
+              </li>
+              <li class="text-neutral-300 tr">support@gmail.com</li>
+              <li class="text-neutral-300 tr">+012 (345) 6789</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER -->
+    <script src="index.js"></script>
+  </body>
+</html>
