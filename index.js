@@ -72,3 +72,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+const tabs = document.querySelectorAll(".tab");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    // Menghapus semua kelas aktif
+    tabs.forEach((t) => t.classList.remove("border-b-2", "border-orange-600"));
+
+    // Menambahkan kelas aktif ke tab yang diklik
+    tab.classList.add("border-b-2", "border-orange-600");
+  });
+});
